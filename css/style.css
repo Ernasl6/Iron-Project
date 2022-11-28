@@ -84,6 +84,7 @@ body {
   width: 189px;
   border: none;
   margin-top: 56px;
+  text-decoration: none;
 }
 
 .p-line {
@@ -354,6 +355,10 @@ body {
   position: relative;
 }
 
+.pause-icon {
+  display: none;
+}
+
 .playing .play-icon {
   display: none;
 }
@@ -389,6 +394,7 @@ body {
   background: #4737FF;
   width: 222px;
   height: 50px;
+  border: none;
 }
 
 .grid-info {
@@ -426,6 +432,112 @@ body {
 }
 .playing .pause-icon {
   display: block;
+}
+
+.end-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h2-end {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #222222;
+  margin-top: 72px;
+  max-width: 540px;
+}
+
+.h4-end {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #222222;
+  margin-top: 120px;
+}
+
+.p-end {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.skroll-end {
+  display: flex;
+  gap: 30px;
+  margin-top: 82px;
+}
+
+.info-end-c {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h2-end-c {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  color: #222222;
+  margin: 0;
+}
+
+.lg-end-c {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.p-end-c {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.logotip {
+  opacity: 0.15;
+  transition: 0.5s;
+}
+
+.logotip:hover {
+  opacity: 1;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 82px;
+  margin-bottom: 135px;
+}
+
+.logotip {
+  color: rgba(21, 21, 21, 0.2117647059);
+}
+
+.logotip:hover {
+  color: #151515;
 }
 
 @media (max-width: 1100px) {
@@ -467,6 +579,16 @@ body {
   .grid-info {
     flex-direction: column;
   }
+  .end-post {
+    flex-direction: column;
+  }
+  .button-skroll {
+    margin: 0 auto;
+  }
+  .info-end-c {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media (max-width: 850px) {
   .grid-container {
@@ -486,6 +608,10 @@ body {
   }
   .nav-02 {
     overflow-x: scroll;
+  }
+  .logos {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 @media (max-width: 511px) {
