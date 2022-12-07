@@ -101,3 +101,17 @@ playBtn7.addEventListener('click', function() {
         this.classList.remove('playing')
     }
 })
+
+const playBtn8 = document.getElementById('btn8')
+
+const video8 = document.getElementById('video-8')
+
+playBtn8.addEventListener('click', function() {
+    if(video8.paused) {
+        video8.play()
+        this.classList.add('playing')
+    } else {
+        video8.pause()
+        this.classList.remove('playing')
+    }
+})
