@@ -115,3 +115,11 @@ playBtn8.addEventListener('click', function() {
         this.classList.remove('playing')
     }
 })
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.mobile-nav')
+
+hamburger.addEventListener('click', function(){
+    nav.classList.toggle('is-active');
+    document.body.classList.toggle('fixed')
+})
